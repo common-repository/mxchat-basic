@@ -1,0 +1,623 @@
+.product-image {
+    max-width: 100%;
+}
+
+
+/* General Styles */
+.mxchat-admin body, .mxchat-admin html {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #212121;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Wrapper */
+.mxchat-admin .wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+}
+
+/* Header */
+.mxchat-admin .wrap h2 {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #212121;
+}
+
+.wrap.mxchat-admin .admin-title {
+    text-shadow: 0 2px 0 #c6c6c6;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: #212121;
+    font-size: 2.5rem;
+}
+
+.mxchat-admin .admin-emphasis {
+    color: white;
+    text-shadow: 2px 1px 0 #000, -1px -1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, 0px 0 0 #000, 4px 0 0 #000, 0 0px 0 #000, 0 0px 0 #000;
+    font-weight: bold;
+    letter-spacing: 5px;
+    font-size: 2.5rem;
+}
+/* Grid Layout */
+.mxchat-admin .mxchat-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.mxchat-admin .mxchat-grid-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+    padding: 20px;
+}
+
+/* Full Width for Submit Content */
+.mxchat-admin .mxchat-grid-item.full-width {
+    grid-column: span 2;
+}
+
+/* Form Styles */
+.mxchat-admin .mxchat-form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.mxchat-admin .mxchat-form-group label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #212121;
+}
+
+.mxchat-admin .mxchat-form-group input[type="url"],
+.mxchat-admin .mxchat-form-group input[type="text"],
+.mxchat-admin .mxchat-form-group textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 100%;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+}
+
+/* Larger Textarea for Content Submission */
+.mxchat-admin .mxchat-form-group textarea {
+    min-height: 200px;
+}
+
+/* Button Styles */
+.mxchat-admin .button.button-primary {
+    color: #fff;
+    background: #212121;
+    border-radius: 20px;
+    padding: 0px 30px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all .2s;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 200px;
+    width: auto;
+    box-shadow: 4px 4px #14141499;
+    border: none;
+    cursor: pointer;
+}
+
+.mxchat-admin .button.button-primary:hover,
+.mxchat-admin .button.button-primary:active {
+    background: #444;
+}
+
+.submit-content-button {
+ margin-top: 10px !important;   
+}
+
+/* Search and Sitemap Group */
+.mxchat-admin .mxchat-search-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.mxchat-admin .mxchat-search-group input[type="text"],
+.mxchat-admin .mxchat-search-group input[type="url"] {
+    flex-grow: 1;
+}
+
+.mxchat-admin .mxchat-search-group input[type="submit"] {
+    background: #212121;
+    color: #fff;
+    border-radius: 20px;
+    padding: 0px 30px;
+    font-size: 1rem;
+    font-weight: 700;
+    box-shadow: 4px 4px #14141499;
+    border: none;
+    transition: background-color .2s;
+    cursor: pointer;
+}
+
+.mxchat-admin .mxchat-search-group input[type="submit"]:hover {
+    background-color: #444;
+}
+
+/* Table Styles */
+.mxchat-admin .wp-list-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+}
+
+.mxchat-admin .wp-list-table th,
+.mxchat-admin .wp-list-table td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.mxchat-admin .wp-list-table th {
+    background: #f0f2f5;
+    color: #212121;
+}
+
+.mxchat-admin .wp-list-table tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+.mxchat-admin .mxchat-pro-banner {
+    background-color: #fff;
+    border-left: 4px solid #212121;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+}
+
+.mxchat-admin .mxchat-pro-banner p {
+    margin: 0;
+    font-size: 16px;
+    color: #212121;
+}
+
+.mxchat-admin .mxchat-pro-banner a {
+    color: #212121;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.mxchat-admin .mxchat-pro-banner a:hover {
+    text-decoration: underline;
+}
+
+/* Toggle Switch Styles */
+.mxchat-admin .toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.mxchat-admin .toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.mxchat-admin .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.mxchat-admin .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+.mxchat-admin input:checked + .slider {
+    background-color: #212121;
+}
+
+.mxchat-admin input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+/* Toggle Switch Label */
+.mxchat-admin .toggle-switch-label {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    color: #212121;
+    margin-bottom: 20px;
+}
+
+.mxchat-spinner {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #333;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: mxchat-spin 1s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes mxchat-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+
+
+.pro-feature-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.pro-feature-wrapper.active select,
+.pro-feature-wrapper.active textarea {
+    opacity: 1; /* Fully opaque when active */
+}
+
+.pro-feature-wrapper.inactive select,
+.pro-feature-wrapper.inactive textarea {
+    opacity: 0.5; /* Grayed out when inactive */
+}
+
+.pro-feature-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+.pro-feature-overlay img {
+    max-width: 100px;
+    pointer-events: auto; /* Allow clicking the image */
+}
+
+.pro-feature-wrapper a {
+    text-decoration: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10; /* Ensure the link is above everything else */
+}
+
+/* Transcripts Layout */
+#mxchat-transcripts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+.mxchat-admin .chat-session {
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: calc(33.333% - 20px);
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    max-height: 500px;
+    overflow: auto;
+}
+
+.mxchat-admin .chat-message {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.mxchat-admin .chat-session h4 {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+.mxchat-controls {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.mxchat-select-all-label {
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.mxchat-select-all-label input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.delete-chats-button {
+    padding: 6px 12px;
+    font-size: 14px;
+    height: auto;
+}
+
+.mxchat-license-status.active {
+    color: green;
+    font-weight: bold;
+}
+
+.mxchat-license-status.inactive {
+    color: red;
+    font-weight: bold;
+}
+.mxchat-nav-tab-wrapper {
+    margin: 0px 0px;
+    padding: 0px 0px;
+    display: flex;
+}
+
+.mxchat-nav-tab {
+    font-size: 14px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    background: #f1f1f1;
+    border: 1px solid #ddd;
+    border-bottom: none;
+    cursor: pointer;
+    box-shadow: none;
+    color: #333;
+    text-decoration: none;
+}
+
+.mxchat-nav-tab:hover, .mxchat-nav-tab:focus {
+     background: #fff;
+    color: #0073aa;   
+    box-shadow: none;
+}
+
+.mxchat-nav-tab-active {
+    background: #fff;
+    border-bottom: 1px solid #fff;
+    color: #0073aa;
+}
+
+.mxchat-tab-content {
+    display: none;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+
+.mxchat-tab-content.active {
+    display: block;
+}
+
+
+.mxchat-settings-section {
+    padding: 20px 0;
+}
+
+.mxchat-settings-section h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+.section-divider {
+    width: 95%;
+    height: 2px;
+    background-color: #e0e0e0;
+    margin: 20px auto;
+    border-radius: 1px;
+}
+
+.form-table th {
+    padding: 10px 0;
+    vertical-align: top;
+    width: 220px;
+}
+
+.form-table td {
+    padding: 10px 0;
+}
+
+
+
+
+.mxchat-table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 1px solid #ccc; /* Adds a border around the table */
+}
+
+/* Header styling to match theme */
+.mxchat-table th {
+    background-color: #212121; /* Dark gray/black background */
+    color: #fff; /* White text */
+    font-weight: bold;
+    padding: 10px;
+    border-bottom: 3px solid #ccc; /* Thicker divider for the header */
+}
+
+/* General cell styling */
+.mxchat-table th, .mxchat-table td {
+    padding: 8px 10px;
+    text-align: left;
+    vertical-align: top; /* Aligns content to the top of the cell */
+    border-bottom: 2px solid #ddd; /* Adds prominent dividers between rows */
+}
+
+/* Alternate row background for better readability */
+.mxchat-table tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+.mxchat-table tbody tr:nth-child(even) {
+    background-color: #fff;
+}
+
+/* ID column should be small */
+.mxchat-table td:nth-child(1), 
+.mxchat-table th:nth-child(1) {
+    width: 5%; /* ID column */
+    text-align: center;
+}
+
+/* Content column should be wide */
+.mxchat-table td:nth-child(2), 
+.mxchat-table th:nth-child(2) {
+    width: 60%; /* Content column */
+}
+
+/* URL column */
+.mxchat-table td:nth-child(3), 
+.mxchat-table th:nth-child(3) {
+    width: 20%; /* URL column */
+    text-align: left;
+    overflow-x: auto; /* Allow the URL to scroll horizontally if it's too long */
+    white-space: nowrap;
+}
+
+/* Actions column */
+.mxchat-table td:nth-child(4), 
+.mxchat-table th:nth-child(4) {
+    width: 15%; /* Edit/Delete column */
+    text-align: center;
+}
+
+/* Edit content textarea styling */
+.content-edit {
+    width: 100%; /* Make textarea fill the column */
+    height: 100px; /* Adjust height as needed */
+    box-sizing: border-box; /* Ensure padding and border are included in the width/height */
+}
+
+/* Button styling to match theme */
+.mxchat-table td .button {
+display: inline-block;
+    margin-right: 5px;
+    background-color: #212121;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 4px 4px #14141499;
+}
+
+/* Hover state */
+.mxchat-table td .button:hover {
+    display: inline-block;
+    margin-right: 5px;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 4px 4px #14141499;
+}
+
+/* Active state */
+.mxchat-table td .button:active {
+    display: inline-block;
+    margin-right: 5px;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 4px 4px #14141499;
+}
+
+/* Focus state */
+.mxchat-table td .button:focus {
+    display: inline-block;
+    margin-right: 5px;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 4px 4px #14141499;
+    outline: none; /* Removes default outline */
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .mxchat-admin .mxchat-grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .mxchat-admin .mxchat-grid-item.full-width {
+        grid-column: span 1;
+    }
+    
+    .mxchat-admin .chat-session {
+        width: calc(100% - 0px);
+    }
+    
+    .mxchat-nav-tab {
+        padding: 10px 12px;
+    }
+    
+    /* Search and Sitemap Group */
+    .mxchat-admin .mxchat-search-group {
+        align-items: normal;
+        flex-direction: column;
+    }
+    
+    .mxchat-admin .mxchat-nav-tab-wrapper,
+    .mxchat-admin .wrap h2.mxchat-nav-tab-wrapper,
+    .mxchat-admin h1.mxchat-nav-tab-wrapper {
+        border-bottom: 0;
+        justify-content: space-evenly;
+        display: flex;
+    }
+
+    .mxchat-admin .mxchat-nav-tab-wrapper .mxchat-nav-tab {
+        margin: 0;
+    }
+    
+    
+}
+
